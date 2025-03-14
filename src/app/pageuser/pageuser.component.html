@@ -1,0 +1,129 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<app-navbar></app-navbar>
+
+
+<!-- ---------------------------------------- -->
+
+
+<section style="background-color: #eee; width: 100%; height: 500px;">
+    <div class="container py-5 d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card mb-4 card-custom">
+                    <div class="card-body text-center">
+                        <img src="./assets/img/5.png" alt="avatar" class="rounded-circle img-fluid">
+                        <h5 class="my-3">John Smith</h5>
+                        <p class="text-muted mb-1">Customer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="card mb-4 card-custom">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Name</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">John Smith</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Email</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">example@example.com</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Phone</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">(097) 234-5678</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="mb-0">Address</p>
+                            </div>
+                            <div class="col-sm-9">
+                                <p class="text-muted mb-0">Bay Area, San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ส่วนปุ่มแก้ไข -->
+                    <div class="col-sm-12 text-end">
+                        <!-- ใช้แท็ก button และเพิ่มไอคอนเป็นแก้ไข -->
+                        <button class="btn btn-edit" data-bs-toggle="modal" data-bs-target="#editCustomerModal">
+                            <i class="fas fa-edit me-1"></i>Edit
+                        </button>
+                    </div>                                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal สำหรับแก้ไขข้อมูลลูกค้า -->
+<div class="modal fade" id="editCustomerModal" tabindex="-1" aria-labelledby="editCustomerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editCustomerModalLabel">Edit Customer Information</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="editName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="editName" placeholder="Enter name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="editEmail" placeholder="Enter email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editPhone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="editPhone" placeholder="Enter phone number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="editAddress" placeholder="Enter address">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="saveCustomerChanges()">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<script>
+    function saveCustomerChanges() {
+        // เพิ่มโค้ดที่นี่เพื่อบันทึกการเปลี่ยนแปลงข้อมูลลูกค้า
+        // ตัวอย่างเช่น:
+        const editedName = document.getElementById('editName').value;
+        const editedEmail = document.getElementById('editEmail').value;
+        const editedPhone = document.getElementById('editPhone').value;
+        const editedAddress = document.getElementById('editAddress').value;
+
+        // ตัวอย่างโค้ดการแสดงข้อมูลที่แก้ไขใน console
+        console.log('Edited Name:', editedName);
+        console.log('Edited Email:', editedEmail);
+        console.log('Edited Phone:', editedPhone);
+        console.log('Edited Address:', editedAddress);
+
+        // ปิด Modal เมื่อบันทึกเสร็จสิ้น
+        const editCustomerModal = new bootstrap.Modal(document.getElementById('editCustomerModal'));
+        editCustomerModal.hide();
+    }
+</script>

@@ -1,0 +1,26 @@
+.card-custom {
+    height: 360px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+section {
+    margin-bottom: 350px; /* เพิ่มระยะห่างด้านล่างของ section */
+}
+
+.btn-edit {
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit:hover {
+    background-color: #d4d4d4;
+}
+
+.btn-edit i {
+    margin-right: 5px;
+}

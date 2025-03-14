@@ -1,0 +1,42 @@
+/* Navbar Background Color */
+.navbar {
+  background-color: #ffffff; /* สีพื้นหลังของ Navbar */
+  
+}
+
+/* Navbar Link Styles */
+.navbar-nav .nav-link {
+  color: #000000; /* สีของข้อความลิงก์ใน Navbar */
+  font-size: 16px; /* ขนาดตัวอักษรของข้อความลิงก์ */
+  margin-right: 15px; /* ระยะห่างของข้อความลิงก์ของ Navbar ด้านขวา */
+}
+
+/* Navbar Link Hover Effect */
+.navbar-nav .nav-link:hover {
+  color: #717171; /* สีของข้อความลิงก์เมื่อเม้าส์ชี้ที่ข้อความลิงก์ */
+}
+
+
+
+/* Navbar Toggler Button Styles */
+.navbar-toggler {
+  color: #ffffff; /* สีขอบของ Navbar Toggler Button */
+  background-color: transparent; /* สีพื้นหลังของ Navbar Toggler Button */
+}
+
+/* Navbar Toggler Button Hover Effect */
+.navbar-toggler:hover {
+  color: #ffffff; /* สีขอบของ Navbar Toggler Button เมื่อโฮเวอร์ */
+  background-color: rgba(0, 0, 0, 0.1); /* สีพื้นหลังของ Navbar Toggler Button เมื่อโฮเวอร์ */
+}
+
+
+/* Navbar Brand Icon Styles for Mobile Devices */
+@media (max-width: 768px) {
+  .navbar-brand i {
+    color: #000000; /* สีของไอคอน Navbar Brand เมื่อเป็นจอโทรศัพท์ */
+    font-size: 24px; /* ขนาดของไอคอน Navbar Brand เมื่อเป็นจอโทรศัพท์ */
+  }
+}
+
+

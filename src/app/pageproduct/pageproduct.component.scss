@@ -1,0 +1,134 @@
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        padding: 1.5rem;
+        margin-bottom: 50px;
+    }
+}
+
+.container {
+    margin-top: 5rem;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-family: "Work Sans";
+}
+
+.card {
+    background-color: #ffffff;
+    max-width: 1000px;
+    width: 100%;
+    padding: 4rem;
+    margin-top: 2rem;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .info {
+        padding: 0;
+    }
+}
+
+.info {
+    padding: 6vh 0vh;
+}
+
+
+
+img {
+    height: fit-content;
+    width: 75%;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    img {
+        padding: 2.5rem 0;
+    }
+}
+.product-quantity1 h2{
+    font-size: 15px;
+}
+.col h5{
+    font-size: 45px;
+}
+.price-container {
+    display: flex;
+    align-items: baseline;
+
+    /* จัดให้เนื้อหาอยู่บนเส้นฐานเดียวกัน */
+}
+
+.price-container h3,
+.price-container p {
+    margin: 20px;
+    /* ลบระยะห่างทั้งหมด */
+}
+  
+.show-btn {
+    background-color: #3f3f3f; /* สีเดียวกับ Bootstrap primary color */
+    color: #fff; /* สีข้อความขาว */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width:100px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .show-btn:hover {
+    background-color: #6d6d6d; /* เมื่อโฮเวอร์ปุ่ม */
+  }
+  
+@media (max-width: 768px) {
+    .btn {
+        background-color: transparent;
+        border-color: rgba(0, 0, 0, 0.863);
+        color: rgba(0, 0, 0, 0.863);
+        padding: 1vh;
+        font-size: 0.9rem;
+        height: fit-content;
+        border-radius: 3px;
+    }
+}
+
+.show-btn1 {
+    background-color: #898989; /* สีเดียวกับ Bootstrap primary color */
+    color: #fff; /* สีข้อความขาว */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width:150px;
+    margin-left: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .show-btn1:hover {
+    background-color: #6d6d6d; /* เมื่อโฮเวอร์ปุ่ม */
+  }
+  
+@media (max-width: 768px) {
+    .btn1 {
+        background-color: transparent;
+        border-color: rgba(0, 0, 0, 0.863);
+        color: rgba(0, 0, 0, 0.863);
+        padding: 1vh;
+        font-size: 0.9rem;
+        height: fit-content;
+        border-radius: 3px;
+    }
+}
+
+

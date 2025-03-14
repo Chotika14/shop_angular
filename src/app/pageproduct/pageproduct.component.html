@@ -1,0 +1,52 @@
+<app-navbar></app-navbar>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- ------------------------------------------ -->
+
+
+<section class="vh-100">
+  <div class="container">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item d-flex justify-content-center align-items-center">
+          <div class="card">
+            <div class="row">
+              <div class="col-md-6 col-12 text-center align-self-center">
+                <img class="img-fluid" [src]="product.imageUrl">
+              </div>
+              <div class="col-md-6 col-12 info">
+                <div class="row title">
+                  <div class="col">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                  </div>
+                </div>
+                <p>{{product.decript}}</p>
+
+                <div class="product-quantity1">
+                  <h2>Quantity</h2>
+                  <div class="product-quantity d-flex align-items-center">
+                    <button class="btn btn-primary btn-sm me-2" style="background-color: #bcbcbc;"
+                      onclick="decreaseQuantity()">-</button>
+                    <input type="text" id="quantity" value="1" class="form-control form-control-sm mx-2" style="width: 60px;"
+                      readonly>
+                    <button class="btn btn-primary btn-sm ms-2" style="background-color: #bcbcbc;"
+                      onclick="increaseQuantity()">+</button>
+                  </div>
+                </div>
+        
+                <div class="price-container">
+                  <h3 style="font-size: 35px; color: #bc0000;">{{product.price}}</h3>
+                  <p>THB</p>
+                </div>
+                <button class="show-btn">Buy</button>
+                <button class="show-btn1">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

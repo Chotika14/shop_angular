@@ -1,0 +1,49 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<app-navbar></app-navbar>
+
+<section class="container mt-5">
+    <h1>Shopping Cart</h1>
+    <div class="row">
+        <div class="col-md-8">
+            <!-- ส่วนสินค้าในตะกร้า -->
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img class="img-fluid" [src]="product.imageUrl">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="col">
+                            <h5 class="card-title">{{ product.name }}</h5>
+                            <p>{{product.decript}}</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <p>{{product.price}}</p>
+                                <p>THB</p>
+                            </div>
+                            <div class="card-title">
+                                <p>Quantity</p>
+                                <!-- <p>{{product.price}}</p> -->
+                            </div>
+                            <button class="btn btn-danger">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- สิ้นสุดส่วนสินค้าในตะกร้า -->
+        </div>
+        <div class="col-md-4">
+            <!-- สรุปรายการสินค้า -->
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Summary</h5>
+                    <p class="card-text">Total Items: X</p>
+                    <p class="card-text">Total Price: $XX.XX</p>
+                    <a href="#" class="btn btn-primary">Checkout</a>
+                </div>
+            </div>
+            <!-- สิ้นสุดสรุปรายการสินค้า -->
+        </div>
+    </div>
+</section>

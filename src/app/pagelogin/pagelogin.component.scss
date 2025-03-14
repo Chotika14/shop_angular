@@ -1,0 +1,40 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+
+/* Custom styling for file input */
+.custom-file-input {
+    color: transparent; /* ทำให้ข้อความของ input ถูกซ่อนไป */
+    width: 50%;
+    cursor: pointer; /* เปลี่ยนเป็นเครื่องมือปรับแต่งเมื่อเม้าส์โฮเวอร์ไปที่ input */
+    border: 2px solid #ccc; /* เส้นขอบ input */
+    padding: 10px; /* กำหนดการเว้นระยะห่างภายใน input */
+    border-radius: 5px; /* มุมโค้งของ input */
+    background-color: #f8f9fa; /* สีพื้นหลังของ input */
+}
+
+/* Style when input is focused */
+.custom-file-input:focus {
+    outline: none; /* ไม่แสดงเส้นขอบตอน input ถูก focus */
+    border-color: #007bff; /* เส้นขอบ input เมื่อถูก focus */
+}
+
+/* Style for file name display */
+.custom-file-label {
+    overflow: hidden; /* ป้องกันการย่อข้อความที่ยาวเกินไป */
+    white-space: nowrap; /* ป้องกันการขึ้นบรรทัดใหม่ */
+    text-overflow: ellipsis; /* ป้องกันข้อความที่ยาวเกินไปด้วยการแสดง ... */
+}
+
+.btn {
+    background-color: #3A3B3D;
+    
+}
+
+.navbar{
+    background-color: #c9c9c9;
+}

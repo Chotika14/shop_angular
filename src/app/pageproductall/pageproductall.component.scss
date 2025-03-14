@@ -1,0 +1,80 @@
+.headertext p {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.headertext h2 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+// @import '~jquery/dist/jquery.min';
+@media (max-width: 576px) {
+    .row-cols-md-3 .col-md-6 {
+        flex: 0 0 50%;
+        /* Set card width to 50% of container on mobile */
+        max-width: 50%;
+        /* Set max width of card to 50% */
+    }
+}
+
+.container {
+    margin-top: -3rem;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    /* ปรับเป็น 100% ของความสูงของ card */
+    object-fit: cover;
+    /* ปรับการแสดงภาพให้เต็มพื้นที่และไม่ต้องเปลี่ยนแปลงสัดส่วน */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    /* ทำให้รูปภาพเต็มกว้างของการ์ด */
+    height: 100%;
+    /* ทำให้รูปภาพเต็มสูงของการ์ด */
+    object-fit: cover;
+    /* ทำให้รูปภาพเต็มพื้นที่โดยไม่เอียงหรือย่อ-ขยาย */
+}
+
+p {
+    font-family: "Noto Sans Thai", sans-serif;
+
+}
+
+
+
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    /* ปรับเป็น 100% ของความสูงของ card */
+    object-fit: cover;
+    /* ปรับการแสดงภาพให้เต็มพื้นที่และไม่ต้องเปลี่ยนแปลงสัดส่วน */
+}
+
+
+
+//radio
+
+.color-picker {
+    display: contents;
+
+}
+
+
+
+
+.card {
+    cursor: pointer;
+    /* เมื่อโฮเวอร์หรือกดที่ Card จะเปลี่ยนเป็น cursor รูปมือ */
+}
+
